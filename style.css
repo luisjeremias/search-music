@@ -1,0 +1,265 @@
+body{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			background-color: #fbfbfb;
+}
+.container{
+	display: flex;
+}
+.left{
+	width: 20vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	
+}
+.header{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	font-family: arial;
+}
+.header h2{
+	font-size: 23px;
+	font-weight: bold;
+	color: #08a7af;
+	padding: 6px;
+}
+.header svg{
+	margin-top: 22px;
+	color: #08a7af;
+	width: 29px;
+	height: 29px;
+}
+.header svg:hover{
+	transform: rotate(20deg);
+}
+.profile-container{
+	position: fixed;
+}
+.center{
+width: 60vw;
+border-left:2px solid #1f1f1f29;
+border-right:2px solid #1f1f1f29;
+}
+.right{
+width: 30vw;
+display: flex;
+align-items: center;
+flex-direction: column;
+
+}
+img{
+	width: 50px;
+}
+.profile-name h2{
+	font-family: arial;
+	text-align:center;
+	font-weight: bold;
+	font-size: 19px;
+	color:#08a7af
+
+}
+.profile {
+	margin-top: 90px;
+	width: 76px;
+	height:76px;
+	background-image: url('assets/img1.jpg');
+	background-position: center;
+	background-size: cover;
+	border-radius: 50%;
+	box-shadow:0px 0px 3px 3px #08a7af
+
+}
+.input-container{
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
+}
+.input{
+	display: flex;
+}
+.input input{
+	width: 300px;
+	height: 30px;
+	border:2px solid #909090;
+	outline: 0;
+	font-size: 19px;
+	font-weight: bold;
+	color:#909090;
+	background-color: transparent;
+}
+.input svg{
+	
+	margin-left: -40px;
+	margin-top: 6px;
+	border-left: 2px solid #909090;
+	color:#909090;
+	cursor: pointer
+
+}
+.posts{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.post{
+	padding: 10px;
+	margin-top: 50px;
+	display: flex;
+	width: 400px;
+}
+.post .img-container{
+	width: 15vw;
+	height:13vw;
+	border-radius: 20px 0px 0px 20px;
+	background-size: cover;
+	background-position: center;
+	background-image: url('assets/img1.jpg');
+	box-shadow:0px 0px 2px 2px #b7b7b7;
+
+}
+.artist-info{
+	display: flex;
+	flex-direction:row;
+	justify-content: center;
+
+}
+
+.artist{
+	width: ;
+}
+.artist .artist-name h2{
+	margin-left: 1px;
+	font-family: arial;
+	font-weight: bold;
+	font-size: 1.2vw;
+	color:#777;
+}
+
+.artist .artist-img{
+
+	background-image: url('assets/img1.jpg');
+	margin-left:14px;
+	width: 4vw;
+	height: 4vw;
+	background-position: center;
+	background-size: cover;
+	border-radius: 50%;
+	box-shadow:0px 0px 2px 2px #b7b7b7;
+}
+.music-name{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	font-family: arial;
+}
+.music-name h2{
+	margin-left: 14px;
+font-size: 16px;
+font-weight: bold;
+color: #555;
+}
+.music-name span{
+	font-size: 12px;
+	font-weight: 400;
+	color: #777;
+}
+audio{
+	margin-left: 3px;
+	width:14vw;
+	padding:9px;
+	outline: 0;
+}
+.pagination{
+	display: none;
+	margin-top: 10px;
+	align-items: center;
+	justify-content: center;
+	width: 500px;
+	height: 50px;
+	border-radius: 10px;
+	border:1px solid #ccc;
+
+}
+.pagination svg{
+	fill: transparent;
+  stroke: #7cdaff;
+  stroke-width:2px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  width: 30px;
+  height: 30px;
+ 
+}
+
+.right-img{
+
+	background-image: url('assets/img1.jpg');
+	border-radius: 10px;
+	width: 260px;
+	background-size: cover;
+	background-position: center;
+	height: 180px;
+	box-shadow:0px 0px 3px 3px #08a7af
+}
+.right-name{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	font-family: arial;
+}
+.right-name h2{
+font-size: 15px;
+}
+.right-pausebtn{
+	display: block;
+}
+.right-playbtn{
+	display: none;
+}
+.play-right svg{
+	margin-left: -10px;
+ fill: #7cdaff;
+  stroke: #7cdaff;
+  stroke-width:1px ;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+#spinner:not([hidden]) {
+    position: relative;
+    top: 230px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#spinner::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    border: 2px solid #fbfbfb;
+    border-top: 3px solid #08a7af;
+    border-radius: 100%;
+    will-change: transform;
+    animation: spin 1s infinite linear;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,68 @@
+comandos
+//iniciar
+git init
+
+//adicionar arquivos
+git add -A
+git add *
+
+//ver as alteracoes para comitar
+git status
+
+//ver o que foi feito
+//git log
+
+//commitar arquivos
+git commit -m "first commit"
+
+//adicionar e commitar
+//git commit -am "first commit"
+
+//ver a branch
+git branch
+
+//voltar a uma versao anterior
+git reset --soft 265093c455b895444938eb
+git reset --hard 265093c455b895444938eb
+
+//criar um novo branch
+git branch nomedabranch
+
+//trocar de branch
+git checkout nomedabranch
+
+//voltar as alteracoes
+
+git cheackout -- exemplo.css
+
+//remover  branch no github
+
+git push origin :nomedabranch
+
+//remover o branch local
+git branch -D nomedabranch
+
+//ver o que foi alterado em cada arquivo
+git diff
+
+//ver o nome dos aquivos que foram alterados
+git diff --name-only
+
+//reverter as alteracoes
+git revert --no-edit 343245b33552c56eb
+
+//ignorar arquivos
+primeiro cirar um arquivo .gitignore
+e preencha o arquivo
+com o nome do arquivo
+
+//actualizar o projecto local com novos arquivos do projecto no github
+git pull origin master
+
+//adicionar no git hub
+git remote add origin https://github.com/luisjeremias/Urna-Eletronica.git
+gut push -u origin master
+
+//adicionar imagens
+![URNAELETRONICA](https://github.com/luisjeremias/Urna-Eletronica/blob/master/img.JPG?raw=true)
+
